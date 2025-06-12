@@ -5,8 +5,8 @@ edition = "2024"
 authors = ["Mukesh Singh <CAMukeshKumarSingh@gmail.com>"]
 description = "DiceDB sdk for Rust."
 readme = "README.md"
-homepage = "https://github.com/BadgerBloke/dicedb-rust-sdk"
-repository = "https://github.com/BadgerBloke/dicedb-rust-sdk"
+homepage = "https://github.com/BadgerBloke/dicedb-rust"
+repository = "https://github.com/BadgerBloke/dicedb-rust"
 license = "MIT"
 keywords = [
     "database",
