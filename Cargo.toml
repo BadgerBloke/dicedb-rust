@@ -10,7 +10,6 @@ repository = "https://github.com/BadgerBloke/dicedb-rust"
 license = "MIT"
 keywords = ["database", "dicedb", "pubsub", "sentinel", "cluster"]
 categories = ["database"]
-build = "build.rs"
 
 # Include pre-generated proto files in the package
 include = ["src/**/*.rs", "Cargo.toml", "README.md", "LICENSE*"]
