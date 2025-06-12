@@ -1,6 +1,6 @@
 [package]
 name = "dicedb"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["Mukesh Singh <CAMukeshKumarSingh@gmail.com>"]
 description = "DiceDB sdk for Rust."
@@ -11,6 +11,14 @@ license = "MIT"
 keywords = ["database", "dicedb", "pubsub", "sentinel", "cluster"]
 categories = ["database"]
 build = "build.rs"
+
+# Include pre-generated proto files in the package
+include = ["src/**/*.rs", "Cargo.toml", "README.md", "LICENSE*"]
+
+[features]
+# Feature flag for regenerating proto files during development
+# Users won't need this - it's only for maintainers
+regenerate-protos = ["prost-build"]
 
 [dependencies]
 bytes = "1.10.1"
@@ -24,5 +32,6 @@ tokio-util = { version = "0.7.15", features = ["codec"] }
 tracing = "0.1.41"
 uuid = { version = "1.17.0", features = ["v7"] }
 
+# Only needed when regenerating protos
 [build-dependencies]
-prost-build = "0.13.5"
+prost-build = { version = "0.13.5", optional = true }
