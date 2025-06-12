@@ -9,7 +9,7 @@ homepage = "https://github.com/BadgerBloke/dicedb-rust"
 repository = "https://github.com/BadgerBloke/dicedb-rust"
 license = "MIT"
 keywords = ["database", "dicedb", "pubsub", "sentinel", "cluster"]
-categories = ["database", "in-memory-cache"]
+categories = ["database", "inmemory cache"]
 build = "build.rs"
 
 [dependencies]
